@@ -1,8 +1,8 @@
-
+@import "sheets-of-paper-a4.css";
 header{
     position:relative;
-    width: 940px;
-    margin: 75px auto 16px auto;
+    width: auto;
+    margin: auto auto 16px auto;
 
 
     /* border-width: medium;
@@ -12,10 +12,13 @@ header{
 }
 
 
+
+
 #brasao {
     position: relative;
     text-align: center;
     font-size: 9pt;
+    margin-bottom: 10px;
 }
 
 #logoRJ {
@@ -30,6 +33,7 @@ header{
 
 #titulo h1 {
     font-size: 12pt;
+    margin: 0;
 }
 
 #titulo p {
@@ -39,7 +43,7 @@ header{
 
 main{
     position:relative;
-    width: 940px;
+    width: auto;
     margin: 0 auto;
 
 
@@ -52,7 +56,7 @@ main{
 
 .div-central {
     position: relative;
-    margin: 0 7% 0 7%;
+    margin: 0;
 
     /* border-width: medium;
     border-style: solid;
@@ -65,8 +69,7 @@ main{
 }
 
 table, th, td {
-    position: relative;
-    margin: 0 auto;
+    
     border: 1px solid black;
     border-collapse: collapse;
     
@@ -79,8 +82,7 @@ table {
   td {
     width: 50%;
     height: 25pt;
-    border-collapse: collapse;
-    
+    border-collapse: collapse;   
     
     
 }
@@ -99,7 +101,7 @@ textarea {
     -webkit-background-size: 100% 20px;
     background-size: 100% 20px;    
     color: #000000;
-    border: 1px solid #EEEEEE;
+    /* border: 1px solid #EEEEEE; */
     box-shadow: 1px 1px 0 #DDDDDD;
     display: inline-block;
     vertical-align: top;   
@@ -108,6 +110,11 @@ textarea {
     background-color: #FFFFFF;  
     overflow: hidden;
     min-height: 60px;  
+
+
+    /* border-width:0px;
+    border:none;   */  
+
 }
 
 
@@ -138,43 +145,45 @@ input[type=radio] {
     text-align: center;
 }
 
-
-footer {
-    /* border-color: chartreuse;
-    border-width: medium;
-    border-style: solid; */
-    margin: 0 7% 0 7%;
-
-   
-}
   
 #logoSGP { 
-    height: 20%;
-    width: 20%;    
+    height: 68px;
+    width: 127px;    
     display: inline-block;
     vertical-align: middle;    
     
 }
 
-footer p {
+footer p {               
+    font-size: 9pt;  
     
-    display:inline-block; 
-    vertical-align: middle; 
-    text-align: right;
-    margin: 0 0 0 0;
-    padding: 0 0 0 37%;
-    font-size: 9pt;    
+    width: auto;    
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    right: 0%;
+    top:25px;
        
+}
+
+footer { 
+    margin-top: 10px;
+
 }
 
 #dadosGerais input:not([type="radio"]):not(.inputDuplo){
     
     height: 100%;
-    width: 70%;
+    width: 200px;
 
     float: right;
     
     box-sizing: border-box;
+
+    border-width:0px;
+    border:none;    
+
+    
 
     /* border-color: chartreuse;
     border-width: medium;
@@ -182,46 +191,40 @@ footer p {
     
 }
 
-#dadosGerais label:not(.radioButton):not(.labelDuplo){       
+#dadosGerais label:not(.radioButton):not(.labelDuplo){      
     
-
-    /* border-color: rgb(255, 0, 0);
-    border-width: medium;
-    border-style: solid;  */
+   
 
     display: inline-block;
     height: 100%;
     width: 30%;
     padding: 4px;
-
-  
-    box-sizing: border-box;
+     
     border-collapse: collapse;    
+    white-space: nowrap;
     
 }
 
 .inputDuplo{
 
     height: 100%;
-    width: 85%;
+    width: 518px;
 
     float: right;
     
     box-sizing: border-box;
 
     outline: none;
+    border-width:0px;
+    border:none;   
 
-    /* border-color: chartreuse;
-    border-width: medium;
-    border-style: solid;  */     
+        
 
 }
 
 .labelDuplo{
 
-    /* border-color: rgb(255, 0, 0);
-    border-width: medium;
-    border-style: solid;  */
+    
 
     display: inline-block;
     height: 100%;
@@ -234,6 +237,12 @@ footer p {
     border-collapse: collapse;
 }
 
+/* Cor de fundo do autocomplete */
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px white inset;
+}
 
-
-  
+/* Cor do texto do autocomplete */
+input:-webkit-autofill {
+    -webkit-text-fill-color: rgb(0, 0, 0) !important;
+}
