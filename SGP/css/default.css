@@ -1,0 +1,133 @@
+@import "sheets-of-paper-a4.css";
+header{
+    position:relative;
+    width: auto;
+    margin: auto auto 16px auto;    
+
+}
+
+input[type=radio] {
+    border: 1px solid #000000;
+    height: 12px;
+    width: 12px;
+    -webkit-appearance: none;
+  }
+  
+  input[type=radio]:checked {
+    background-color: #000000;
+    background-size: 7px 7px;
+  }
+  
+  input[type=radio]:focus {
+    outline-color: transparent;
+  }
+
+.brasao {
+    position: relative;
+    text-align: center;
+    font-size: 9pt;
+    margin-bottom: 10px;
+}
+
+.brasao img {
+    height: 102.72px;
+    width: 85.52px;
+
+}
+
+
+.titulo {
+    position: relative;
+    text-align: center;
+}
+
+.titulo h1 {
+    font-size: 12pt;
+    margin: 0;
+}
+
+.titulo p {
+    font-size: 9pt;
+}
+
+
+main{
+    position:relative;
+    width: auto;
+    margin: 0 auto; 
+}
+
+
+.dadosGerais table, .dadosGerais th, .dadosGerais td {    
+    border: 1px solid black;
+    border-collapse: collapse;    
+}
+
+.dadosGerais table {
+    width: 100%;    
+}
+
+.labelSimples{    
+    display: inline-block;
+    height: 100%;
+    width: 30%;
+    padding: 4px;     
+    border-collapse: collapse;    
+    white-space: nowrap;    
+}
+
+.labelDuplo{   
+    display: inline-block;
+    height: 100%;
+    width: 15%;
+    padding: 4px;  
+    box-sizing: border-box;
+    border-collapse: collapse;
+}
+
+.inputSimples{
+    height: 100%;
+    width: 200px;
+    float: right;    
+    box-sizing: border-box;
+    border-width:0px;
+    border:none;     
+}
+
+.inputDuplo{
+
+    height: 100%;
+    width: 518px;
+    float: right;    
+    box-sizing: border-box;
+    outline: none;
+    border-width:0px;
+    border:none;
+}
+
+
+.dadosGerais td {
+    width: 50%;
+    height: 25pt;
+}
+
+
+.assinatura {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.assinatura h4 {
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+ 
+/* Cor de fundo do autocomplete */
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px white inset;
+}
+
+/* Cor do texto do autocomplete */
+input:-webkit-autofill {
+    -webkit-text-fill-color: rgb(0, 0, 0) !important;
+}

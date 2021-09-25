@@ -1,0 +1,31 @@
+
+
+.especificacao input, .especificacao label, .acumulacao input, .acumulacao label{
+    margin: 15px 0 0 0;
+    display: inline-block;  
+    vertical-align: middle;     
+}
+
+.especificacao label, .acumulacao label {
+    width: 625px;    
+}
+
+.acumulacao h2 {
+    text-align: center;
+    font-size: 18px;
+    margin:  15px auto;
+   
+}
+
+.especificacao {
+
+    margin: 20px 0 150px 0;
+} */
+
+ .lpDobro div {
+    margin: 20px auto;
+} */
+
+ .dadosGerais {
+    margin-top: 30px;
+}

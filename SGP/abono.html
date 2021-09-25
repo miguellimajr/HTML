@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/abono.css">
+
+    <script src="js/script.js"></script>
+
+    <title>REQUERIMENTO DE ABONO PERMANÊNCIA</title>
+</head>
+<body class="document">
+
+    <div class="page">
+        <header>
+            <div class="brasao">
+                <img src="logoRJ.png" alt="Brasão do Estado do Rio de Janeiro">
+                <p>
+                    Governo do Estado do Rio de Janeiro <br>
+                    Secretaria de Estado de Ciência, Tecnologia e Inovação <br>
+                    Universidade do Estado do Rio de Janeiro<br>
+                </p>            
+            </div>
+    
+            <div class="titulo">
+                <h1>REQUERIMENTO DE ABONO PERMANÊNCIA</h1>               
+            </div>           
+        </header>
+    
+        <main>
+            <div class="dadosGerais">
+                <p>À Superintendência de Gestão de Pessoas da UERJ/DEGAF,</p>
+                <table>
+                    <thead>                      
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="2">
+                                <label for="nome" class="labelDuplo">Nome</label>
+                                <input type="text" id="nome" class="inputDuplo"/>        
+                            </td>
+                        </tr>
+                      <tr>
+                        <td>
+                            <label for="matricula" class="labelSimples">Matrícula UERJ</label>
+                            <input type="text" id="matricula" class="inputSimples"/>                            
+                        </td>
+                        <td>
+                            <label for="idFuncional" class="labelSimples">ID Funcional</label>
+                            <input type="text" id="idFuncional" class="inputSimples"/>                     
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                            <label for="cargo" class="labelSimples">Cargo/Função</label>
+                            <input type="text" id="cargo" class="inputSimples"/>
+                            
+                        </td>
+                        <td>
+                            <label for="lotacao" class="labelSimples">Lotação</label>
+                            <input type="text" id="lotacao" class="inputSimples"/>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                            <label for="cpf" class="labelSimples">CPF</label>
+                            <input type="text" id="cpf" class="inputSimples"/>
+                        </td>
+                        <td>                            
+                            <label for="nascimento" class="labelSimples">Data de Nascimento</label>
+                            <input type="text" id="nascimento" class="inputSimples"/> 
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                            <label for="tel" class="labelSimples">Tel.</label>
+                            <input type="tel" id="tel" class="inputSimples"/>
+                        </td>
+                        <td>
+                            <label for="cel" class="labelSimples">Cel.</label>
+                            <input type="tel" id="cel" class="inputSimples"/>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">
+                            <label for="email" class="labelDuplo">E-mail</label> 
+                            <input type="email" id="email" class="inputDuplo"/>
+                        </td>
+                      </tr>
+                    </tbody>
+                    </table>                
+            </div>
+    
+            <div class="especificacao">
+                <div class="lpDobro">
+
+                    <div>
+                        <input type="radio" name="autoriza" id="autorizaNao" >
+                        <label for="autorizaNao">
+                            Não autoriza o cômputo de períodos de Licença - Prêmio, contados em dobro,
+                            adquiridos até 15/12/1998 e não usufruídos até a presente data na concessão do Abono
+                            Permanência.
+                        </label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="autoriza" id="autorizaSim" >
+                        <label for="autorizaSim">
+                            Autoriza o cômputo dos períodos de Licença - Prêmio, contados em dobro,
+                            adquiridos até 15/10/1998 e não usufruídos até a presente data, necessários à concessão
+                            do Abono Permanência, renunciando ao usufruto destes.
+                        </label>
+                    </div>                 
+                </div> 
+                
+                
+            </div>
+            
+            <div class="assinatura">
+                <p>Rio de Janeiro, ______ de_____________ de_______ .</p>
+                <h4>____________________________________________________</h4>
+                <p>Assinatura do requerente</p>                      
+            </div> 
+               
+              <button onclick="salvar()">Salvar</button>
+        </main>           
+        
+    </div>
+
+    <div class="page">
+
+        <header>
+            <div class="brasao">
+                <img src="logoRJ.png" alt="Brasão do Estado do Rio de Janeiro">
+                <p>
+                    Governo do Estado do Rio de Janeiro <br>
+                    Secretaria de Estado de Ciência, Tecnologia e Inovação <br>
+                    Universidade do Estado do Rio de Janeiro<br>
+                </p>            
+            </div>
+    
+            <div class="titulo">
+                <h1>DECLARAÇÃO PARA ABONO PERMENÊNCIA</h1>               
+            </div>           
+        </header>
+
+        <div class="acumulacao">
+            
+            <p>
+                Declaro, para fins de Abono Permanência, em consonância com o disposto no inciso
+                II, do artigo 4º da Deliberação nº 190 do Tribunal de Contas do Estado do Rio de
+                Janeiro, de 29 de junho de 1995, que o tempo de serviço/contribuição consignado neste
+                processo não beneficiou nem beneficiará outra contagem a meu favor e que:                    
+            </p>
+
+            <div>
+                <input type="radio" name="acumula" id="acumulaNao" >
+                <label for="acumulaNao">
+                <p>
+                    Não exerço qualquer cargo efetivo ou emprego público na Administração Pública
+                    direta, nas Autarquias, Fundações Mantidas pelo Poder Público, nas empresas Públicas
+                    e nas Sociedades de Economia Mista, nem percebo proventos públicos decorrentes da
+                    aposentadoria inacumulável com o cargo que exerço.                                
+                </p>
+                </label>
+            </div>
+
+            <div>
+                <input type="radio" name="acumula" id="acumulaAtivo" >
+                <label for="acumulaAtivo">
+                <p>
+                    Acumulo com a matrícula nº __________________________________ , no cargo de
+                    _____________________________ , com lotação no (a) _____________________ ,
+                    desde o ano de _____________ .                                 
+                </p>
+                </label>
+            </div>
+
+            <div>
+                <input type="radio" name="acumula" id="acumulaInativo" >
+                <label for="acumulaInativo">
+                <p>
+                    Acumulava com a matrícula nº _______________________________ , no cargo de
+                    _________________________________ , com lotação no (a) _________________ ,
+                    desde o ano de ______________ , tendo me aposentado em ______ / ______ / ______ .                                
+                </p>
+                </label>
+            </div>
+        </div>
+
+        <div class="assinatura">
+            <p>Rio de Janeiro, ______ de_____________ de_______ .</p>
+            <h4>____________________________________________________</h4>
+            <p>Assinatura do requerente</p>                      
+        </div> 
+        
+    </div>
+
+
+    
+</body>
+</html>
