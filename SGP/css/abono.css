@@ -20,12 +20,19 @@
 .especificacao {
 
     margin: 20px 0 150px 0;
-} */
+} 
 
  .lpDobro div {
     margin: 20px auto;
-} */
+} 
 
  .dadosGerais {
     margin-top: 30px;
 }
+
+
+#labelNascimento {
+    font-size: 12.5px;
+}
+
+

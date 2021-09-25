@@ -40,7 +40,8 @@
                         <tr>
                             <td colspan="2">
                                 <label for="nome" class="labelDuplo">Nome</label>
-                                <input type="text" id="nome" class="inputDuplo"/>        
+                                
+                                <p id=inputNome><input type="text" id="nome" class="inputDuplo"/></p>    
                             </td>
                         </tr>
                       <tr>
@@ -70,7 +71,7 @@
                             <input type="text" id="cpf" class="inputSimples"/>
                         </td>
                         <td>                            
-                            <label for="nascimento" class="labelSimples">Data de Nascimento</label>
+                            <label for="nascimento" class="labelSimples" id="labelNascimento">Data de Nascimento</label>
                             <input type="text" id="nascimento" class="inputSimples"/> 
                         </td>
                       </tr>
@@ -126,6 +127,7 @@
             </div> 
                
               <button onclick="salvar()">Salvar</button>
+              <button onclick="reset()">Alterar</button>
         </main>           
         
     </div>

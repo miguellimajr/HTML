@@ -63,8 +63,20 @@ main{
     border-collapse: collapse;    
 }
 
+.dadosGerais td {
+    width: 641.52px;
+    height: 33.32px;
+}
+
 .dadosGerais table {
-    width: 100%;    
+    width: 100%;  
+    font-size: 17px;  
+}
+
+.dadosGerais table p { 
+    max-height: 30.33px;
+    display: inline-block;    
+
 }
 
 .labelSimples{    
@@ -92,17 +104,21 @@ main{
     box-sizing: border-box;
     border-width:0px;
     border:none;     
+    font-size: 17px;  
+    font-family: "Roboto", -apple-system, "San Francisco", "Segoe UI", "Helvetica Neue", sans-serif;
 }
 
 .inputDuplo{
 
     height: 100%;
     width: 518px;
-    float: right;    
+    /* float: right;   */  
     box-sizing: border-box;
     outline: none;
     border-width:0px;
     border:none;
+    font-size: 17px;  
+    font-family: "Roboto", -apple-system, "San Francisco", "Segoe UI", "Helvetica Neue", sans-serif;
 }
 
 
