@@ -2,122 +2,9 @@
 header{
     position:relative;
     width: auto;
-    margin: auto auto 16px auto;
-
-
-    /* border-width: medium;
-    border-style: solid;
-    border-color: #F00; */
+    margin: auto auto 16px auto;    
 
 }
-
-
-
-
-#brasao {
-    position: relative;
-    text-align: center;
-    font-size: 9pt;
-    margin-bottom: 10px;
-}
-
-#logoRJ {
-    height: 102.72px;
-    width: 85.52px;
-}
-
-#titulo {
-    position: relative;
-    text-align: center;
-}
-
-#titulo h1 {
-    font-size: 12pt;
-    margin: 0;
-}
-
-#titulo p {
-    font-size: 9pt;
-}
-
-
-main{
-    position:relative;
-    width: auto;
-    margin: 0 auto;
-
-
-    /* border-width: medium;
-    border-style: solid;
-    border-color: #F00; */
-
-}
-
-
-.div-central {
-    position: relative;
-    margin: 0;
-
-    /* border-width: medium;
-    border-style: solid;
-    border-color: blueviolet;  */   
-
-}
-
-.div-central p {
-    margin: 0;
-}
-
-table, th, td {
-    
-    border: 1px solid black;
-    border-collapse: collapse;
-    
-}
-
-table {
-    width: 100%;    
-}
-
-  td {
-    width: 50%;
-    height: 25pt;
-    border-collapse: collapse;   
-    
-    
-}
-
-#destino {
-    margin-bottom: 0px;         
-}
-
-
-textarea {
-    margin-top: 10px;
-    resize: vertical;
-    width: 100%;
-    background-image: -moz-linear-gradient(top, transparent, transparent 19px, #000000 0px);
-    background-image: -webkit-linear-gradient(top, transparent, transparent 19px, #000000 0);
-    -webkit-background-size: 100% 20px;
-    background-size: 100% 20px;    
-    color: #000000;
-    /* border: 1px solid #EEEEEE; */
-    box-shadow: 1px 1px 0 #DDDDDD;
-    display: inline-block;
-    vertical-align: top;   
-    font-size: 12px;
-    line-height: 20px;         
-    background-color: #FFFFFF;  
-    overflow: hidden;
-    min-height: 60px;  
-
-
-    /* border-width:0px;
-    border:none;   */  
-
-}
-
-
 
 input[type=radio] {
     border: 1px solid #000000;
@@ -134,19 +21,134 @@ input[type=radio] {
   input[type=radio]:focus {
     outline-color: transparent;
   }
-  
 
-#deferimento, #deferimento-data, #assinatura {
-    margin-top: 15px;
+.brasao {
+    position: relative;
+    text-align: center;
+    font-size: 9pt;
+    margin-bottom: 10px;
+}
+
+.brasao img {
+    height: 102.72px;
+    width: 85.52px;
 
 }
 
-#assinatura {
+
+.titulo {
+    position: relative;
     text-align: center;
 }
 
+.titulo h1 {
+    font-size: 12pt;
+    margin: 0;
+}
+
+.titulo p {
+    font-size: 9pt;
+}
+
+
+main{
+    position:relative;
+    width: auto;
+    margin: 0 auto; 
+}
+
+main h3 {
+    font-size: 12pt;
+    margin: 5px 0;
+}
+
+.dadosGerais table, .dadosGerais th, .dadosGerais td {    
+    border: 1px solid black;
+    border-collapse: collapse;    
+}
+
+.dadosGerais table {
+    width: 100%;    
+}
+
+.labelSimples{    
+    display: inline-block;
+    height: 100%;
+    width: 30%;
+    padding: 4px;     
+    border-collapse: collapse;    
+    white-space: nowrap;    
+}
+
+.labelDuplo{   
+    display: inline-block;
+    height: 100%;
+    width: 15%;
+    padding: 4px;  
+    box-sizing: border-box;
+    border-collapse: collapse;
+}
+
+.inputSimples{
+    height: 100%;
+    width: 200px;
+    float: right;    
+    box-sizing: border-box;
+    border-width:0px;
+    border:none;     
+}
+
+.inputDuplo{
+
+    height: 100%;
+    width: 518px;
+    float: right;    
+    box-sizing: border-box;
+    outline: none;
+    border-width:0px;
+    border:none;
+}
+
+
+.dadosGerais td {
+    width: 50%;
+    height: 25pt;
+}
+
+textarea {
+    margin-top: 10px;
+    resize: vertical;
+    width: 100%;
+    background-image: -moz-linear-gradient(top, transparent, transparent 19px, #000000 0px);
+    background-image: -webkit-linear-gradient(top, transparent, transparent 19px, #000000 0);
+    -webkit-background-size: 100% 20px;
+    background-size: 100% 20px;    
+    color: #000000;    
+    box-shadow: 1px 1px 0 #DDDDDD;
+    display: inline-block;
+    vertical-align: top;   
+    font-size: 16px;
+    line-height: 20px;         
+    background-color: #FFFFFF;  
+    overflow: hidden;
+    min-height: 60px;  
+}
+
+ 
+
+
+.assinatura {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.assinatura h4 {
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
   
-#logoSGP { 
+footer img { 
     height: 68px;
     width: 127px;    
     display: inline-block;
@@ -168,74 +170,11 @@ footer p {
 
 footer { 
     margin-top: 10px;
+    position: relative;
+    margin: 0;
 
 }
 
-#dadosGerais input:not([type="radio"]):not(.inputDuplo){
-    
-    height: 100%;
-    width: 200px;
-
-    float: right;
-    
-    box-sizing: border-box;
-
-    border-width:0px;
-    border:none;    
-
-    
-
-    /* border-color: chartreuse;
-    border-width: medium;
-    border-style: solid; */  
-    
-}
-
-#dadosGerais label:not(.radioButton):not(.labelDuplo){      
-    
-   
-
-    display: inline-block;
-    height: 100%;
-    width: 30%;
-    padding: 4px;
-     
-    border-collapse: collapse;    
-    white-space: nowrap;
-    
-}
-
-.inputDuplo{
-
-    height: 100%;
-    width: 518px;
-
-    float: right;
-    
-    box-sizing: border-box;
-
-    outline: none;
-    border-width:0px;
-    border:none;   
-
-        
-
-}
-
-.labelDuplo{
-
-    
-
-    display: inline-block;
-    height: 100%;
-    width: 15%;
-    padding: 4px;
- 
-
-  
-    box-sizing: border-box;
-    border-collapse: collapse;
-}
 
 /* Cor de fundo do autocomplete */
 input:-webkit-autofill {

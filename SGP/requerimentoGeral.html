@@ -13,96 +13,93 @@
 
     <div class="page">
         <header>
-            <div id="brasao">
-                <img src="logoRJ.png" alt="Brasão do Estado do Rio de Janeiro" id="logoRJ">
-                <p id="textoBrasao">
+            <div class="brasao">
+                <img src="logoRJ.png" alt="Brasão do Estado do Rio de Janeiro">
+                <p>
                     Governo do Estado do Rio de Janeiro <br>
                     Secretaria de Estado de Ciência, Tecnologia e Inovação <br>
                     Universidade do Estado do Rio de Janeiro<br>
                 </p>            
             </div>
     
-            <div id="titulo">
+            <div class="titulo">
                 <h1>REQUERIMENTO GERAL</h1>
                 <p>(Utilizar somente quando não houver, no site da SGP, formulário específico para sua necessidade.)</p>
             </div>           
         </header>
     
         <main>
-            <div id="dadosGerais" class="div-central">
-                <p id="destino">À Superintendência de Gestão de Pessoas da UERJ,</p>
-                <div id="tabela">
-                    <table>
-                        <thead>                      
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td colspan="2">
-                                    <label for="nome" class="labelDuplo">Nome</label>
-                                    <input type="text" id="nome"class="inputDuplo"/>        
-                                </td>
-                            </tr>
-                          <tr>
-                            <td>
-                                <label for="matricula">Matrícula UERJ</label>
-                                <input type="text" id="matricula"/>                            
-                            </td>
-                            <td>
-                                <label for="idFuncional">ID Funcional</label>
-                                <input type="text" id="idFuncional"/>                     
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                                <label for="cargo">Cargo/Função</label>
-                                <input type="text" id="cargo"/>
-                                
-                            </td>
-                            <td>
-                                <label for="lotacao">Lotação</label>
-                                <input type="text" id="lotacao"/>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                                <label for="cpf">CPF</label>
-                                <input type="text" id="cpf"/>
-                            </td>
-                            <td>                            
-                                <input type="radio" name="vinculo" id="servidor" >
-                                <label for="servidor" class="radioButton">Servidor</label>
-    
-                                
-                                <input type="radio" name="vinculo" id="contratado">
-                                <label for="contratado" class="radioButton">Contratado pela SGP</label>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                                <label for="tel">Tel.</label>
-                                <input type="tel" id="tel"/>
-                            </td>
-                            <td>
-                                <label for="cel">Cel.</label>
-                                <input type="tel" id="cel"/>
-                            </td>
-                          </tr>
-                          <tr>
+            <div class="dadosGerais">
+                <p>À Superintendência de Gestão de Pessoas da UERJ,</p>
+                <table>
+                    <thead>                      
+                    </thead>
+                    <tbody>
+                        <tr>
                             <td colspan="2">
-                                <label for="email" class="labelDuplo">E-mail</label> 
-                                <input type="email" id="email" class="inputDuplo"/>
+                                <label for="nome" class="labelDuplo">Nome</label>
+                                <input type="text" id="nome" class="inputDuplo"/>        
                             </td>
-                          </tr>
-                        </tbody>
-                        </table>
-                </div>
+                        </tr>
+                      <tr>
+                        <td>
+                            <label for="matricula" class="labelSimples">Matrícula UERJ</label>
+                            <input type="text" id="matricula" class="inputSimples"/>                            
+                        </td>
+                        <td>
+                            <label for="idFuncional" class="labelSimples">ID Funcional</label>
+                            <input type="text" id="idFuncional" class="inputSimples"/>                     
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                            <label for="cargo" class="labelSimples">Cargo/Função</label>
+                            <input type="text" id="cargo" class="inputSimples"/>
+                            
+                        </td>
+                        <td>
+                            <label for="lotacao" class="labelSimples">Lotação</label>
+                            <input type="text" id="lotacao" class="inputSimples"/>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                            <label for="cpf" class="labelSimples">CPF</label>
+                            <input type="text" id="cpf" class="inputSimples"/>
+                        </td>
+                        <td>                            
+                            <input type="radio" name="vinculo" id="servidor" >
+                            <label for="servidor" class="radioButton">Servidor</label>
+
+                            
+                            <input type="radio" name="vinculo" id="contratado">
+                            <label for="contratado" class="radioButton">Contratado pela SGP</label>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                            <label for="tel" class="labelSimples">Tel.</label>
+                            <input type="tel" id="tel" class="inputSimples"/>
+                        </td>
+                        <td>
+                            <label for="cel" class="labelSimples">Cel.</label>
+                            <input type="tel" id="cel" class="inputSimples"/>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">
+                            <label for="email" class="labelDuplo">E-mail</label> 
+                            <input type="email" id="email" class="inputDuplo"/>
+                        </td>
+                      </tr>
+                    </tbody>
+                    </table>                
             </div>
     
-            <div id="especificacao" class="div-central">
-                <p id="requer">Requer:</p>
+            <div class="especificacao">
+                <h3>Requer:</h3>
                 
-                <div id="div-tipo">
-                    
+                <div>                    
                     <input type="radio" name="tipoRequerimento" id="declaracao">
                     <label for="declaracao">Declaração</label>
     
@@ -119,42 +116,38 @@
     
                 <textarea name="especificacaoDoPedido" id="especificacaoDoPedido" cols="30" rows="3"></textarea>
     
-                <p>Justificativa:</p>
+                <h3>Justificativa:</h3>
     
                 <textarea name="justificativaDoPedido" id="justificativaDoPedido" cols="30" rows="3"></textarea>    
             
+                <div class="anexos">
+                    <h3>Anexos:</h3>
+                    <div>                
+                        <input type="radio" name="anexos" id="anexos-sim">
+                        <label for="anexos-sim">SIM</label>
+                        
+                        <input type="radio" name="anexos" id="anexos-nao">
+                        <label for="anexos-nao">NÃO</label>                
+                    </div>
+                    <p>Especificar:</p>
+        
+                    <textarea name="textoAnexo" id="textoAnexo" cols="30" rows="3"></textarea>
+                    <p>Nesses termos, pede deferimento.</p>
+                </div>
             </div>
     
-            <div id="div-anexos" class="div-central">
-                <p>Anexos:</p>
-                <div>                
-                    <input type="radio" name="anexos" id="anexos-sim">
-                    <label for="anexos-sim">SIM</label>
-                    
-                    <input type="radio" name="anexos" id="anexos-nao">
-                    <label for="anexos-nao">NÃO</label>                
-                </div>
-                <p>Especificar:</p>
+            
     
-                <textarea name="justificativaDoPedido" id="justificativaDoPedido" cols="30" rows="3"></textarea>
-            </div>
-    
-            <div id="deferimento" class="div-central">
-                <p>Nesses termos, pede deferimento.</p>
-                <div id="deferimento-data">
-                    <p>Rio de Janeiro,____ de_____________ de_______ .</p>
-                </div>
-                
-                <div id="assinatura">
-                    <p></p>_________________________<br>
-                    <p>Assinatura do requerente</p>
-                </div>
+            <div class="assinatura">
+                <p>Rio de Janeiro, ______ de_____________ de_______ .</p>
+                <h4>____________________________________________________</h4>
+                <p>Assinatura do requerente</p>                      
             </div>    
               
         </main> 
 
-        <footer class="div-central">
-            <img src="logoSGP.png" alt="Logo da SGP" id="logoSGP">
+        <footer>
+            <img src="logoSGP.png" alt="Logo da SGP">
             <p>Encaminhar este formulário preenchido para atendimento@sgp.uerj.br</p>
         </footer>    
         
